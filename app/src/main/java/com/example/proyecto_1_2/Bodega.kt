@@ -18,6 +18,24 @@ class Bodega {
         println("producto agregado ${product.name}, ${product.stock} ${product.price}")
     }
 
+    fun getProduct(): String {
+        var name = ""
+        products.forEach {
+            name = name + it.name + "."
+        }
+
+        return name
+    }
+
+    fun getStock(): Number {
+        var stock = 0
+        products.forEach {
+           stock = stock + it.stock
+        }
+        println("es este $stock")
+        return stock
+    }
+
     fun deleteProduct(product: Product, cantidad: Int) {
         if (!products.contains(product)) {
             return println("El producto ${product.name} no fue encontrado")

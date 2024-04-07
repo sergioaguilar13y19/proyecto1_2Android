@@ -22,9 +22,9 @@ class MainActivity : AppCompatActivity() {
         var negocio2 = Empleado(456, "Antonio")
         var negocio3 = Empleado(789, "Beatriz")
 
-        negocio1.cargarStock(television, 90)
-        negocio2.cargarStock(licuadora, 90)
-        negocio3.cargarStock(refrigerador, 90)
+        negocio1.cargarStock(television, 20)
+        negocio2.cargarStock(licuadora, 20)
+        negocio3.cargarStock(refrigerador, 20)
 
         //dia 1
         negocio2.venderProducto(licuadora, 15)
@@ -48,6 +48,22 @@ class MainActivity : AppCompatActivity() {
         negocio1.venderProducto(television, 7)
         //println("compro al negocio1")
         //negocio2.cargarStock(refrigerador,7)
-        negocio3.venderProducto(refrigerador, 7)
+        //negocio3.venderProducto(refrigerador, 7)
+
+        binding.tvName.text = "Negocio 1"
+        binding.tvProduct.text = negocio1.bodega.getProduct()
+        binding.tvStock.text = negocio1.bodega.getStock().toString()
+        binding.tvCorte.text = negocio1.dineroTotal.toString()
+
+        //
+        binding.tvName2.text = "Negocio 2"
+        binding.tvProduct2.text = negocio2.bodega.getProduct()
+        binding.tvStock2.text = negocio2.bodega.getStock().toString()
+        binding.tvCorte2.text = negocio2.dineroTotal.toString()
+        //
+        binding.tvName3.text = "Negocio 3"
+        binding.tvProduct3.text = negocio3.bodega.getProduct()
+        binding.tvStock3.text = negocio3.bodega.getStock().toString()
+        binding.tvCorte3.text = negocio3.dineroTotal.toString()
     }
 }
