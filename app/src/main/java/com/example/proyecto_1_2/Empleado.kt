@@ -18,6 +18,7 @@ class Empleado(val DNI: Int, val nombre: String) {
             println("producto insuficiente para ser vendido")
         } else {
             bodega.deleteProduct(product, cantidad)
+            vendidos += cantidad
             dineroTotal = dineroTotal + (product.price * cantidad)
         }
         // dineroObtenido(product)

@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="27dp"
-        android:text="Stock"
+        android:text="Stock Total"
         app:layout_constraintStart_toEndOf="@+id/tv_product"
         app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
@@ -51,8 +51,8 @@
         android:id="@+id/tv_stock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/tv_name" />
@@ -111,9 +111,9 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="27dp"
-        android:text="Stock"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:text="Stock Total"
         app:layout_constraintStart_toEndOf="@+id/tv_product2"
         app:layout_constraintTop_toBottomOf="@+id/tv_name2" />
 
@@ -121,7 +121,7 @@
         android:id="@+id/tv_stock2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="28dp"
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/textView11"
@@ -184,9 +184,9 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="27dp"
-        android:text="Stock"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Stock Total"
         app:layout_constraintStart_toEndOf="@+id/tv_product3"
         app:layout_constraintTop_toBottomOf="@+id/tv_name3" />
 
@@ -194,7 +194,7 @@
         android:id="@+id/tv_stock3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="28dp"
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/textView14"
@@ -219,4 +219,64 @@
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/textView15"
         app:layout_constraintTop_toBottomOf="@+id/tv_product3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="72dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="Productos Vendidos"
+        app:layout_constraintStart_toEndOf="@+id/tv_corte"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="72dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Productos Vendidos"
+        app:layout_constraintStart_toEndOf="@+id/tv_corte2"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="76dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Productos Vendidos"
+        app:layout_constraintStart_toEndOf="@+id/tv_corte3"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/tv_product_v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_stock" />
+
+    <TextView
+        android:id="@+id/tv_product_v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_stock2" />
+
+    <TextView
+        android:id="@+id/tv_product_v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_stock3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
