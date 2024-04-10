@@ -21,10 +21,8 @@ class Bodega {
     fun getProduct(): String {
         var name = ""
         products.forEach {
-            //name = name + it.name + "."
             name = name + it.stock +" "+ it.name +  "."
         }
-
         return name
     }
 

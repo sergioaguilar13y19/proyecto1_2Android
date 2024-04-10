@@ -1,10 +1,7 @@
 package com.example.proyecto_1_2
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.proyecto_1_2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -41,19 +38,20 @@ class MainActivity : AppCompatActivity() {
         //dia 7
         negocio2.cargarStock(licuadora, 10)
         //dia 8
-        negocio1.cargarStock(refrigerador, 5)
         negocio3.venderProducto(refrigerador, 5)
-        //dia 9
-        //negocio2.cargarStock(television, 7)
-        //negocio1.venderProducto(television, 7)
+        //negocio1.cargarStock(refrigerador, 5)
 
-        //println("compro al negocio1")
-        negocio2.cargarStock(refrigerador,7)
-        negocio3.venderProducto(refrigerador, 7)
+        //dia 9
+            //negocio2.cargarStock(television, 7)
+            //negocio1.venderProducto(television, 7)
+
+            //println("compro al negocio1")
+        //negocio2.cargarStock(refrigerador,7)
+        //negocio3.venderProducto(refrigerador, 7)
 
         //dia 10
-        negocio1.venderProducto(refrigerador,5)
-        negocio2.venderProducto(refrigerador,5)
+        //negocio1.venderProducto(refrigerador,5)
+        //negocio2.venderProducto(refrigerador,5)
         //negocio3.venderProducto(refrigerador,5)
 
         binding.tvName.text = "Negocio 1"

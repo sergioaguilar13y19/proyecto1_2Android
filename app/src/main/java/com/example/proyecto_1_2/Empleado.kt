@@ -10,22 +10,15 @@ class Empleado(val DNI: Int, val nombre: String) {
     var vendidos = 0
     var dineroTotal = 0.0
     fun cargarStock(product: Product, cantidad: Int) {
-        bodega.addProduct(product, cantidad)
+        bodega.addProduct(product,cantidad)
     }
-
     fun venderProducto(product: Product, cantidad: Int) {
         if (cantidad > product.stock || product.stock == 0) {
             println("producto insuficiente para ser vendido")
-        } else {
-            bodega.deleteProduct(product, cantidad)
-            vendidos += cantidad
-            dineroTotal = dineroTotal + (product.price * cantidad)
+            return
         }
-        // dineroObtenido(product)
-
-    }
-
-    fun corteCaja() {
-        println("Dinero total obtenido $dineroTotal")
+        bodega.deleteProduct(product, cantidad)
+        vendidos += cantidad
+        dineroTotal += (product.price * cantidad)
     }
 }
