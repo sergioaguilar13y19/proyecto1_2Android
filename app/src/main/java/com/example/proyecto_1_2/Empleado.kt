@@ -13,7 +13,7 @@ class Empleado(val DNI: Int, val nombre: String) {
         bodega.addProduct(product,cantidad)
     }
     fun venderProducto(product: Product, cantidad: Int) {
-        if (cantidad > product.stock || product.stock == 0) {
+        if (cantidad > product.stock || product.stock == 0 || cantidad < 0) {
             println("producto insuficiente para ser vendido")
             return
         }
